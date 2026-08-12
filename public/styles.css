@@ -96,7 +96,7 @@ a { color: inherit; text-decoration: none; }
 }
 .nav-links a {
   font-size: 14px;
-  color: var(--muted);
+  color: #b4bbc6;
   padding: 6px 12px;
   border-radius: 8px;
   transition: color 0.2s ease, background 0.2s ease;
@@ -104,20 +104,20 @@ a { color: inherit; text-decoration: none; }
 .nav-links a:hover { color: var(--text); background: rgba(255, 255, 255, 0.05); }
 .nav-links .nav-cta {
   color: var(--text);
-  background: rgba(124, 140, 255, 0.12);
-  border: 1px solid rgba(124, 140, 255, 0.3);
+  background: transparent;
+  border: 1px solid var(--border-strong);
 }
-.nav-links .nav-cta:hover { background: rgba(124, 140, 255, 0.2); }
+.nav-links .nav-cta:hover { border-color: var(--accent); background: rgba(124, 140, 255, 0.08); }
 
 /* ---------- hero ---------- */
 
 .hero {
-  padding: 112px 24px 72px;
+  padding: 112px 0 72px;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
-.hero > * { position: relative; z-index: 1; }
+.hero-inner { position: relative; z-index: 1; }
 
 .glow {
   position: absolute;
@@ -154,6 +154,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-right: -0.06em; /* offset trailing letter-spacing so centering is optical */
 }
 
 .hero-title {
@@ -203,7 +204,7 @@ a { color: inherit; text-decoration: none; }
 .btn-primary:hover { box-shadow: 0 6px 32px rgba(124, 140, 255, 0.42); }
 
 .btn-ghost {
-  border: 1px solid var(--border-strong);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   color: var(--text);
   background: transparent;
 }
@@ -317,9 +318,9 @@ a { color: inherit; text-decoration: none; }
 .role-chips span {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: #c7cdd6;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--border);
+  color: #d2d8e0;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   padding: 4px 10px;
   border-radius: 999px;
 }
@@ -412,7 +413,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent);
+  color: var(--accent-2);
   margin-top: -4px;
 }
 
@@ -556,7 +557,7 @@ a { color: inherit; text-decoration: none; }
 /* ---------- responsive ---------- */
 
 @media (max-width: 760px) {
-  .hero { padding: 80px 20px 56px; }
+  .hero { padding: 64px 0 48px; }
   .impact-grid, .stack-grid, .focus-grid { grid-template-columns: 1fr; }
   .section { padding: 64px 0; }
   .container { padding: 0 16px; }
@@ -568,4 +569,14 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 520px) {
   .nav-links li:not(:last-child) { display: none; }
   .nav-links { gap: 0; }
+}
+
+/* small phones: tighten hero so the terminal fits above the fold */
+@media (max-width: 480px) {
+  .hero { padding: 40px 0 44px; }
+  .hero-title { font-size: 2.15rem; }
+  .eyebrow { margin-bottom: 14px; }
+  .hero-sub { margin-bottom: 24px; font-size: 15.5px; }
+  .terminal { margin-top: 28px; }
+  .terminal pre { font-size: 12.5px; line-height: 1.7; padding: 14px 16px; }
 }
