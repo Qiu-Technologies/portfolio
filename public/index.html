@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stevens Qiu — Full-stack engineer &amp; AI infrastructure</title>
-  <meta name="description" content="Stevens Qiu — full-stack engineer building AI-native infrastructure and developer tools: agent platforms, CI/CD, auth, and content pipelines on the Cloudflare edge." />
+  <title>Stevens Qiu — Software Engineer @ Amazon · Data Infrastructure</title>
+  <meta name="description" content="Software engineer at Amazon building a data pipeline platform that serves petabytes of data daily — control plane to data plane, cloud-native compute, and efficiency that cuts latency and cost." />
   <meta name="author" content="Stevens Qiu" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Stevens Qiu — Full-stack engineer &amp; AI infrastructure" />
-  <meta property="og:description" content="AI-native infrastructure and developer tools, built end to end." />
+  <meta property="og:title" content="Stevens Qiu — Software Engineer @ Amazon" />
+  <meta property="og:description" content="Building a data pipeline platform that serves petabytes of data daily." />
   <meta property="og:url" content="https://stevens.fyi/" />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -24,7 +24,8 @@
     <nav class="nav container" aria-label="Primary">
       <a class="brand" href="#top">stevens<span class="brand-dot">.</span>fyi</a>
       <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#platform">Platform</a></li>
         <li><a href="#stack">Stack</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -35,127 +36,223 @@
   <main id="main">
     <!-- HERO -->
     <section class="hero container">
-      <p class="eyebrow reveal">Stevens Qiu — full-stack engineer</p>
+      <div class="glow glow-1" aria-hidden="true"></div>
+      <div class="glow glow-2" aria-hidden="true"></div>
+      <p class="eyebrow reveal">Stevens Qiu — software engineer @ Amazon</p>
       <h1 class="hero-title reveal">
-        I build <span class="grad">AI-native infrastructure</span><br />
-        and developer tools, end to end.
+        I build <span class="grad">data infrastructure</span><br />
+        that moves petabytes a day.
       </h1>
       <p class="hero-sub reveal">
-        From auth and CI/CD to agent orchestration and content pipelines —
-        designed, built, and operated as one system on the Cloudflare edge.
+        Data pipeline platform at Amazon — control plane to data plane,
+        cloud-native compute, and the efficiency work that keeps petabytes
+        flowing with less latency and less cost.
       </p>
       <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn btn-primary" href="#experience">My experience</a>
         <a class="btn btn-ghost" href="#contact">Get in touch</a>
       </div>
       <div class="terminal reveal" aria-hidden="true">
         <div class="terminal-bar"><span></span><span></span><span></span><code>stevens.fyi ~</code></div>
-        <pre><code><span class="t-prompt">$</span> stevens --whoami
-&gt; builder at Qiu-Technologies
-<span class="t-prompt">$</span> stevens --stack
-&gt; TypeScript · Go · Python · Cloudflare edge · AI agents</code></pre>
+        <pre><code><span class="t-prompt">$</span> stevens --role
+&gt; Software engineer @ Amazon
+<span class="t-prompt">$</span> stevens --scale
+&gt; petabytes of data, served daily
+<span class="t-prompt">$</span> stevens --efficiency
+&gt; lower latency · lower cost to serve</code></pre>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
       <div class="container">
-        <h2 class="section-title reveal"><span class="section-index">01</span> Selected projects</h2>
-        <div class="project-grid">
-          <article class="card reveal">
-            <div class="card-head">
-              <h3>Nexus</h3>
-              <span class="card-role">AI agent platform</span>
-            </div>
-            <p class="card-desc">
-              Multi-agent orchestration platform — tool catalog, persistent agent
-              sessions, and cross-service agent messaging via the Iris bridge.
-            </p>
-            <div class="card-tags">
-              <span>AI Agents</span><span>TypeScript</span><span>D1</span>
-            </div>
-            <a class="card-link" href="https://nexus.stevens.fyi" target="_blank" rel="noopener">nexus.stevens.fyi <span class="arrow">↗</span></a>
-          </article>
+        <h2 class="section-title reveal"><span class="section-index">01</span> Experience</h2>
 
-          <article class="card reveal">
-            <div class="card-head">
-              <h3>Forge</h3>
-              <span class="card-role">CI/CD controller</span>
+        <div class="role-card reveal">
+          <div class="role-head">
+            <div>
+              <h3>Software Engineer</h3>
+              <p class="role-company">Amazon</p>
             </div>
-            <p class="card-desc">
-              Self-hosted CI/CD: Cloudflare Worker controller with a Go runner
-              agent. Multi-stage deploy pipelines with bake/verify, GitHub
-              webhooks, and structured secret management.
-            </p>
-            <div class="card-tags">
-              <span>CI/CD</span><span>Go</span><span>Workers</span>
+            <div class="role-chips">
+              <span>Data pipeline platform</span>
+              <span>Control &amp; data plane</span>
+              <span>Cloud-native</span>
             </div>
-            <a class="card-link" href="https://github.com/Qiu-Technologies/forge" target="_blank" rel="noopener">github.com/Qiu-Technologies/forge <span class="arrow">↗</span></a>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-head">
-              <h3>News Site</h3>
-              <span class="card-role">CMS + AI pipeline</span>
-            </div>
-            <p class="card-desc">
-              News CMS with an AI curation pipeline — automated scoring,
-              filtering, and publishing to a static edge site.
-            </p>
-            <div class="card-tags">
-              <span>CMS</span><span>AI Pipeline</span><span>Pages</span>
-            </div>
-            <a class="card-link" href="https://news.stevens.fyi" target="_blank" rel="noopener">news.stevens.fyi <span class="arrow">↗</span></a>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-head">
-              <h3>AuthMi</h3>
-              <span class="card-role">Auth as a service</span>
-            </div>
-            <p class="card-desc">
-              Multi-tenant authentication platform — email/password + OAuth
-              social login, API keys, RBAC, webhooks, and billing, all
-              JWT-backed on PostgreSQL.
-            </p>
-            <div class="card-tags">
-              <span>Auth</span><span>OAuth</span><span>Postgres</span>
-            </div>
-            <a class="card-link" href="https://github.com/Qiu-Technologies/authmi" target="_blank" rel="noopener">github.com/Qiu-Technologies/authmi <span class="arrow">↗</span></a>
-          </article>
-
-          <article class="card card-wide reveal">
-            <div class="card-head">
-              <h3>Omni</h3>
-              <span class="card-role">AI-powered SaaS</span>
-            </div>
-            <p class="card-desc">
-              AI-agent-powered 2D structural analysis SaaS — describe a
-              structure, get it modeled, analyzed, and iterated on.
-            </p>
-            <div class="card-tags">
-              <span>SaaS</span><span>AI</span><span>React</span>
-            </div>
-            <a class="card-link" href="https://omni.stevens.fyi" target="_blank" rel="noopener">omni.stevens.fyi <span class="arrow">↗</span></a>
-          </article>
+          </div>
+          <p class="role-intro">
+            I build and operate the platform that powers customers' data
+            pipelines — from the control plane that orchestrates pipeline
+            operations to the data plane that executes them at petabyte scale.
+          </p>
+          <ul class="experience-list">
+            <li class="reveal"><strong>Petabyte-scale platform</strong> — design systems that serve petabytes of data to customers every day.</li>
+            <li class="reveal"><strong>Control → data plane</strong> — work end to end across orchestration, scheduling, and execution.</li>
+            <li class="reveal"><strong>Cloud-native compute</strong> — serverless functions on Lambda, fleets on EC2, large-scale transforms on EMR.</li>
+            <li class="reveal"><strong>Pipeline operations</strong> — design systems that make it easy for customers to run and manage their pipelines.</li>
+            <li class="reveal"><strong>Efficiency-first</strong> — improve compute and storage efficiency to cut latency and cost to serve.</li>
+          </ul>
         </div>
 
-        <h3 class="sub-title reveal">More from the lab</h3>
-        <ul class="lab-list">
-          <li class="reveal"><a href="https://github.com/Qiu-Technologies/Iris" target="_blank" rel="noopener">Iris <span class="arrow">↗</span></a><span class="lab-desc">Production messaging backend for the Hermes agent gateway</span></li>
-          <li class="reveal"><a href="https://mail.stevens.fyi" target="_blank" rel="noopener">Mailpost <span class="arrow">↗</span></a><span class="lab-desc">Self-hosted email platform — a Resend alternative</span></li>
-          <li class="reveal"><a href="https://tunes.stevens.fyi" target="_blank" rel="noopener">Tunepull <span class="arrow">↗</span></a><span class="lab-desc">Music / audio app</span></li>
-          <li class="reveal"><a href="https://github.com/Qiu-Technologies/neon-daw" target="_blank" rel="noopener">NEON DAW <span class="arrow">↗</span></a><span class="lab-desc">AI-native digital audio workstation</span></li>
-          <li class="reveal"><a href="https://shippu.stevens.fyi" target="_blank" rel="noopener">Shippu <span class="arrow">↗</span></a><span class="lab-desc">Deployment platform for Alibaba Cloud</span></li>
-          <li class="reveal"><a href="https://lightssl.com" target="_blank" rel="noopener">LightSSL <span class="arrow">↗</span></a><span class="lab-desc">Automated SSL certificate issuance &amp; management</span></li>
-        </ul>
+        <div class="impact-grid">
+          <article class="card impact-card reveal">
+            <svg class="impact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V13M10 20V6M16 20V10M22 20H2"/></svg>
+            <div class="impact-value">Petabytes+ / day</div>
+            <div class="impact-label">Scale</div>
+            <p class="impact-desc">A pipeline platform serving petabytes of customer data, daily.</p>
+          </article>
+          <article class="card impact-card reveal">
+            <svg class="impact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M2 13l10 5 10-5"/><path d="M2 18l10 5 10-5"/></svg>
+            <div class="impact-value">Control → data</div>
+            <div class="impact-label">Architecture</div>
+            <p class="impact-desc">Orchestrate in the control plane, execute in the data plane.</p>
+          </article>
+          <article class="card impact-card reveal">
+            <svg class="impact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+            <div class="impact-value">Faster · cheaper</div>
+            <div class="impact-label">Efficiency</div>
+            <p class="impact-desc">Compute &amp; storage efficiency that reduces delays and cost to serve.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATFORM -->
+    <section class="section" id="platform">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-index">02</span> The platform</h2>
+        <p class="section-lead reveal">
+          How a pipeline flows through the system: the control plane
+          orchestrates, the data plane executes — serverless ingest, fleet
+          processing, and EMR-scale transforms, delivered to customers.
+        </p>
+
+        <div class="arch-frame reveal">
+          <div class="arch-scroll">
+            <svg viewBox="0 0 1000 420" role="img" aria-label="Data pipeline architecture: control plane orchestrating a data plane of sources, Lambda ingest, EC2 processing, EMR transforms, and serving">
+              <defs>
+                <linearGradient id="packetGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#7c8cff"/>
+                  <stop offset="1" stop-color="#3ddad7"/>
+                </linearGradient>
+                <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(255,255,255,0.35)"/>
+                </marker>
+              </defs>
+
+              <!-- control plane band -->
+              <rect x="20" y="20" width="960" height="112" rx="12" fill="rgba(124,140,255,0.05)" stroke="rgba(124,140,255,0.3)" stroke-dasharray="6 5"/>
+              <text x="40" y="44" font-family="JetBrains Mono, monospace" font-size="11" fill="#7c8cff" letter-spacing="2">CONTROL PLANE</text>
+              <text x="40" y="60" font-family="JetBrains Mono, monospace" font-size="10" fill="#9aa1ab">orchestration · scheduling · monitoring · API</text>
+
+              <g>
+                <rect x="370" y="44" width="260" height="68" rx="10" fill="#141722" stroke="#7c8cff" stroke-opacity="0.55"/>
+                <text x="500" y="72" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" fill="#e8eaee">Control Plane</text>
+                <text x="500" y="92" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9aa1ab">pipeline operations</text>
+              </g>
+
+              <!-- data plane band -->
+              <rect x="20" y="150" width="960" height="250" rx="12" fill="rgba(61,218,215,0.04)" stroke="rgba(61,218,215,0.25)" stroke-dasharray="6 5"/>
+              <text x="40" y="174" font-family="JetBrains Mono, monospace" font-size="11" fill="#3ddad7" letter-spacing="2">DATA PLANE</text>
+              <text x="40" y="190" font-family="JetBrains Mono, monospace" font-size="10" fill="#9aa1ab">serverless ingest → fleet processing → large-scale transforms</text>
+
+              <!-- control → data connectors -->
+              <g stroke="rgba(124,140,255,0.4)" stroke-dasharray="4 5" stroke-width="1.5">
+                <line x1="305" y1="112" x2="305" y2="208"/>
+                <line x1="495" y1="112" x2="495" y2="208"/>
+                <line x1="685" y1="112" x2="685" y2="208"/>
+              </g>
+              <text x="512" y="162" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#8f9dff">manages</text>
+
+              <!-- data plane nodes -->
+              <g font-family="JetBrains Mono, monospace">
+                <g>
+                  <rect x="40" y="208" width="150" height="72" rx="10" fill="#12141a" stroke="rgba(255,255,255,0.16)"/>
+                  <text x="115" y="238" text-anchor="middle" font-size="13" fill="#e8eaee">Sources</text>
+                  <text x="115" y="258" text-anchor="middle" font-size="10" fill="#9aa1ab">customer data</text>
+                </g>
+                <g>
+                  <rect x="230" y="208" width="150" height="72" rx="10" fill="#12141a" stroke="rgba(255,255,255,0.16)"/>
+                  <text x="305" y="238" text-anchor="middle" font-size="13" fill="#e8eaee">Ingest</text>
+                  <text x="305" y="258" text-anchor="middle" font-size="10" fill="#9aa1ab">AWS Lambda</text>
+                </g>
+                <g>
+                  <rect x="420" y="208" width="150" height="72" rx="10" fill="#12141a" stroke="rgba(255,255,255,0.16)"/>
+                  <text x="495" y="238" text-anchor="middle" font-size="13" fill="#e8eaee">Process</text>
+                  <text x="495" y="258" text-anchor="middle" font-size="10" fill="#9aa1ab">EC2 fleets</text>
+                </g>
+                <g>
+                  <rect x="610" y="208" width="150" height="72" rx="10" fill="#12141a" stroke="rgba(255,255,255,0.16)"/>
+                  <text x="685" y="238" text-anchor="middle" font-size="13" fill="#e8eaee">Transform</text>
+                  <text x="685" y="258" text-anchor="middle" font-size="10" fill="#9aa1ab">EMR</text>
+                </g>
+                <g>
+                  <rect x="800" y="208" width="150" height="72" rx="10" fill="#12141a" stroke="rgba(61,218,215,0.45)"/>
+                  <text x="875" y="238" text-anchor="middle" font-size="13" fill="#e8eaee">Serve</text>
+                  <text x="875" y="258" text-anchor="middle" font-size="10" fill="#3ddad7">to customers</text>
+                </g>
+              </g>
+
+              <!-- arrows -->
+              <g stroke="rgba(255,255,255,0.3)" stroke-width="1.5" marker-end="url(#arrow)">
+                <line x1="192" y1="244" x2="226" y2="244"/>
+                <line x1="382" y1="244" x2="416" y2="244"/>
+                <line x1="572" y1="244" x2="606" y2="244"/>
+                <line x1="762" y1="244" x2="796" y2="244"/>
+              </g>
+
+              <!-- flowing data packets -->
+              <g fill="url(#packetGrad)">
+                <circle r="4">
+                  <animateMotion dur="2.4s" repeatCount="indefinite" path="M192 244 L226 244"/>
+                </circle>
+                <circle r="4" opacity="0.55">
+                  <animateMotion dur="2.4s" repeatCount="indefinite" begin="-1.2s" path="M192 244 L226 244"/>
+                </circle>
+                <circle r="4">
+                  <animateMotion dur="2.8s" repeatCount="indefinite" path="M382 244 L416 244"/>
+                </circle>
+                <circle r="4" opacity="0.55">
+                  <animateMotion dur="2.8s" repeatCount="indefinite" begin="-1.4s" path="M382 244 L416 244"/>
+                </circle>
+                <circle r="4">
+                  <animateMotion dur="3.2s" repeatCount="indefinite" path="M572 244 L606 244"/>
+                </circle>
+                <circle r="4" opacity="0.55">
+                  <animateMotion dur="3.2s" repeatCount="indefinite" begin="-1.6s" path="M572 244 L606 244"/>
+                </circle>
+                <circle r="4">
+                  <animateMotion dur="2.2s" repeatCount="indefinite" path="M762 244 L796 244"/>
+                </circle>
+                <circle r="4" opacity="0.55">
+                  <animateMotion dur="2.2s" repeatCount="indefinite" begin="-1.1s" path="M762 244 L796 244"/>
+                </circle>
+              </g>
+
+              <!-- stat strip -->
+              <g font-family="JetBrains Mono, monospace">
+                <line x1="40" y1="330" x2="960" y2="330" stroke="rgba(255,255,255,0.08)"/>
+                <text x="115" y="365" text-anchor="middle" font-size="12" fill="#3ddad7">petabytes+</text>
+                <text x="115" y="382" text-anchor="middle" font-size="10" fill="#9aa1ab">served daily</text>
+                <text x="305" y="365" text-anchor="middle" font-size="12" fill="#3ddad7">λ → EC2 → EMR</text>
+                <text x="305" y="382" text-anchor="middle" font-size="10" fill="#9aa1ab">cloud-native compute</text>
+                <text x="495" y="365" text-anchor="middle" font-size="12" fill="#3ddad7">control + data</text>
+                <text x="495" y="382" text-anchor="middle" font-size="10" fill="#9aa1ab">planes, one system</text>
+                <text x="685" y="365" text-anchor="middle" font-size="12" fill="#3ddad7">lower latency</text>
+                <text x="685" y="382" text-anchor="middle" font-size="10" fill="#9aa1ab">lower cost to serve</text>
+                <text x="875" y="365" text-anchor="middle" font-size="12" fill="#3ddad7">24/7</text>
+                <text x="875" y="382" text-anchor="middle" font-size="10" fill="#9aa1ab">pipeline operations</text>
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- STACK -->
     <section class="section" id="stack">
       <div class="container">
-        <h2 class="section-title reveal"><span class="section-index">02</span> Stack</h2>
+        <h2 class="section-title reveal"><span class="section-index">03</span> Stack</h2>
         <div class="stack-grid">
           <div class="stack-group reveal">
             <h3>Languages</h3>
@@ -164,21 +261,21 @@
             </ul>
           </div>
           <div class="stack-group reveal">
-            <h3>Frameworks</h3>
+            <h3>AWS &amp; cloud</h3>
             <ul>
-              <li>React</li><li>Hono</li><li>Vite</li><li>Tailwind CSS</li><li>Drizzle ORM</li>
+              <li>AWS Lambda</li><li>EC2</li><li>EMR</li><li>S3</li><li>Serverless</li><li>Cloud-native</li>
             </ul>
           </div>
           <div class="stack-group reveal">
-            <h3>Cloud &amp; infra</h3>
+            <h3>Engineering</h3>
             <ul>
-              <li>Cloudflare Workers</li><li>Pages</li><li>D1</li><li>R2</li><li>Pulumi</li><li>GitHub Actions</li><li>Docker</li><li>systemd</li>
+              <li>Distributed systems</li><li>Data pipelines</li><li>System design</li><li>Observability</li><li>Cost optimization</li>
             </ul>
           </div>
           <div class="stack-group reveal">
-            <h3>Data &amp; AI</h3>
+            <h3>Practices</h3>
             <ul>
-              <li>PostgreSQL / Neon</li><li>AI agents</li><li>LLM pipelines</li><li>RAG</li>
+              <li>Control / data plane design</li><li>Performance tuning</li><li>Reliability</li><li>Efficiency</li>
             </ul>
           </div>
         </div>
@@ -188,18 +285,20 @@
     <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container narrow">
-        <h2 class="section-title reveal"><span class="section-index">03</span> About</h2>
+        <h2 class="section-title reveal"><span class="section-index">04</span> About</h2>
         <p class="about-text reveal">
-          I'm a full-stack engineer building the Qiu-Technologies platform from
-          the ground up — auth, CI/CD, agent orchestration, and content
-          pipelines that run on the Cloudflare edge. I care about systems that
-          are boring to operate and delightful to use: small surfaces, typed
-          contracts, and every layer deployable on its own.
+          I'm a software engineer at Amazon, working on a data pipeline
+          platform that serves petabytes of data every day. My work spans the
+          control plane — the APIs, orchestration, and scheduling that run
+          pipeline operations — and the data plane — the cloud-native compute
+          that executes them: Lambda for serverless ingest, EC2 fleets for
+          processing, and EMR for large-scale transforms.
         </p>
         <p class="about-text reveal">
-          My work spans multi-tenant SaaS, self-hosted infrastructure, and
-          AI-agent plumbing — where the fun part is making all three talk to
-          each other without anyone holding it together with duct tape.
+          I design systems that make pipelines easier to operate and cheaper
+          to run. Most of my work comes back to efficiency: improving compute
+          and storage so customers get their data faster, at lower cost, at
+          every scale.
         </p>
       </div>
     </section>
@@ -207,14 +306,13 @@
     <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="container narrow contact">
-        <h2 class="section-title reveal"><span class="section-index">04</span> Contact</h2>
+        <h2 class="section-title reveal"><span class="section-index">05</span> Contact</h2>
         <p class="contact-line reveal">
-          Have a project, a role, or an idea worth building? My inbox is open.
+          Have a role, a project, or an idea worth building? My inbox is open.
         </p>
         <a class="contact-email reveal" href="mailto:stevensqiu@gmail.com">stevensqiu@gmail.com</a>
         <div class="contact-links reveal">
           <a href="https://github.com/QYongHao" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
-          <a href="https://github.com/Qiu-Technologies" target="_blank" rel="noopener">Qiu-Technologies <span class="arrow">↗</span></a>
         </div>
       </div>
     </section>
