@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stevens Qiu — Full-stack engineer &amp; AI infrastructure</title>
+  <meta name="description" content="Stevens Qiu — full-stack engineer building AI-native infrastructure and developer tools: agent platforms, CI/CD, auth, and content pipelines on the Cloudflare edge." />
+  <meta name="author" content="Stevens Qiu" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Stevens Qiu — Full-stack engineer &amp; AI infrastructure" />
+  <meta property="og:description" content="AI-native infrastructure and developer tools, built end to end." />
+  <meta property="og:url" content="https://stevens.fyi/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top">stevens<span class="brand-dot">.</span>fyi</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container">
+      <p class="eyebrow reveal">Stevens Qiu — full-stack engineer</p>
+      <h1 class="hero-title reveal">
+        I build <span class="grad">AI-native infrastructure</span><br />
+        and developer tools, end to end.
+      </h1>
+      <p class="hero-sub reveal">
+        From auth and CI/CD to agent orchestration and content pipelines —
+        designed, built, and operated as one system on the Cloudflare edge.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="terminal reveal" aria-hidden="true">
+        <div class="terminal-bar"><span></span><span></span><span></span><code>stevens.fyi ~</code></div>
+        <pre><code><span class="t-prompt">$</span> stevens --whoami
+&gt; builder at Qiu-Technologies
+<span class="t-prompt">$</span> stevens --stack
+&gt; TypeScript · Go · Python · Cloudflare edge · AI agents</code></pre>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-index">01</span> Selected projects</h2>
+        <div class="project-grid">
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>Nexus</h3>
+              <span class="card-role">AI agent platform</span>
+            </div>
+            <p class="card-desc">
+              Multi-agent orchestration platform — tool catalog, persistent agent
+              sessions, and cross-service agent messaging via the Iris bridge.
+            </p>
+            <div class="card-tags">
+              <span>AI Agents</span><span>TypeScript</span><span>D1</span>
+            </div>
+            <a class="card-link" href="https://nexus.stevens.fyi" target="_blank" rel="noopener">nexus.stevens.fyi <span class="arrow">↗</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>Forge</h3>
+              <span class="card-role">CI/CD controller</span>
+            </div>
+            <p class="card-desc">
+              Self-hosted CI/CD: Cloudflare Worker controller with a Go runner
+              agent. Multi-stage deploy pipelines with bake/verify, GitHub
+              webhooks, and structured secret management.
+            </p>
+            <div class="card-tags">
+              <span>CI/CD</span><span>Go</span><span>Workers</span>
+            </div>
+            <a class="card-link" href="https://github.com/Qiu-Technologies/forge" target="_blank" rel="noopener">github.com/Qiu-Technologies/forge <span class="arrow">↗</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>News Site</h3>
+              <span class="card-role">CMS + AI pipeline</span>
+            </div>
+            <p class="card-desc">
+              News CMS with an AI curation pipeline — automated scoring,
+              filtering, and publishing to a static edge site.
+            </p>
+            <div class="card-tags">
+              <span>CMS</span><span>AI Pipeline</span><span>Pages</span>
+            </div>
+            <a class="card-link" href="https://news.stevens.fyi" target="_blank" rel="noopener">news.stevens.fyi <span class="arrow">↗</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>AuthMi</h3>
+              <span class="card-role">Auth as a service</span>
+            </div>
+            <p class="card-desc">
+              Multi-tenant authentication platform — email/password + OAuth
+              social login, API keys, RBAC, webhooks, and billing, all
+              JWT-backed on PostgreSQL.
+            </p>
+            <div class="card-tags">
+              <span>Auth</span><span>OAuth</span><span>Postgres</span>
+            </div>
+            <a class="card-link" href="https://github.com/Qiu-Technologies/authmi" target="_blank" rel="noopener">github.com/Qiu-Technologies/authmi <span class="arrow">↗</span></a>
+          </article>
+
+          <article class="card card-wide reveal">
+            <div class="card-head">
+              <h3>Omni</h3>
+              <span class="card-role">AI-powered SaaS</span>
+            </div>
+            <p class="card-desc">
+              AI-agent-powered 2D structural analysis SaaS — describe a
+              structure, get it modeled, analyzed, and iterated on.
+            </p>
+            <div class="card-tags">
+              <span>SaaS</span><span>AI</span><span>React</span>
+            </div>
+            <a class="card-link" href="https://omni.stevens.fyi" target="_blank" rel="noopener">omni.stevens.fyi <span class="arrow">↗</span></a>
+          </article>
+        </div>
+
+        <h3 class="sub-title reveal">More from the lab</h3>
+        <ul class="lab-list">
+          <li class="reveal"><a href="https://github.com/Qiu-Technologies/Iris" target="_blank" rel="noopener">Iris <span class="arrow">↗</span></a><span class="lab-desc">Production messaging backend for the Hermes agent gateway</span></li>
+          <li class="reveal"><a href="https://mail.stevens.fyi" target="_blank" rel="noopener">Mailpost <span class="arrow">↗</span></a><span class="lab-desc">Self-hosted email platform — a Resend alternative</span></li>
+          <li class="reveal"><a href="https://tunes.stevens.fyi" target="_blank" rel="noopener">Tunepull <span class="arrow">↗</span></a><span class="lab-desc">Music / audio app</span></li>
+          <li class="reveal"><a href="https://github.com/Qiu-Technologies/neon-daw" target="_blank" rel="noopener">NEON DAW <span class="arrow">↗</span></a><span class="lab-desc">AI-native digital audio workstation</span></li>
+          <li class="reveal"><a href="https://shippu.stevens.fyi" target="_blank" rel="noopener">Shippu <span class="arrow">↗</span></a><span class="lab-desc">Deployment platform for Alibaba Cloud</span></li>
+          <li class="reveal"><a href="https://lightssl.com" target="_blank" rel="noopener">LightSSL <span class="arrow">↗</span></a><span class="lab-desc">Automated SSL certificate issuance &amp; management</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-index">02</span> Stack</h2>
+        <div class="stack-grid">
+          <div class="stack-group reveal">
+            <h3>Languages</h3>
+            <ul>
+              <li>TypeScript</li><li>JavaScript</li><li>Go</li><li>Python</li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>React</li><li>Hono</li><li>Vite</li><li>Tailwind CSS</li><li>Drizzle ORM</li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3>Cloud &amp; infra</h3>
+            <ul>
+              <li>Cloudflare Workers</li><li>Pages</li><li>D1</li><li>R2</li><li>Pulumi</li><li>GitHub Actions</li><li>Docker</li><li>systemd</li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3>Data &amp; AI</h3>
+            <ul>
+              <li>PostgreSQL / Neon</li><li>AI agents</li><li>LLM pipelines</li><li>RAG</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container narrow">
+        <h2 class="section-title reveal"><span class="section-index">03</span> About</h2>
+        <p class="about-text reveal">
+          I'm a full-stack engineer building the Qiu-Technologies platform from
+          the ground up — auth, CI/CD, agent orchestration, and content
+          pipelines that run on the Cloudflare edge. I care about systems that
+          are boring to operate and delightful to use: small surfaces, typed
+          contracts, and every layer deployable on its own.
+        </p>
+        <p class="about-text reveal">
+          My work spans multi-tenant SaaS, self-hosted infrastructure, and
+          AI-agent plumbing — where the fun part is making all three talk to
+          each other without anyone holding it together with duct tape.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container narrow contact">
+        <h2 class="section-title reveal"><span class="section-index">04</span> Contact</h2>
+        <p class="contact-line reveal">
+          Have a project, a role, or an idea worth building? My inbox is open.
+        </p>
+        <a class="contact-email reveal" href="mailto:stevensqiu@gmail.com">stevensqiu@gmail.com</a>
+        <div class="contact-links reveal">
+          <a href="https://github.com/QYongHao" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+          <a href="https://github.com/Qiu-Technologies" target="_blank" rel="noopener">Qiu-Technologies <span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Stevens Qiu</span>
+      <span class="footer-mono">stevens.fyi — built on Cloudflare Pages</span>
+    </div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
