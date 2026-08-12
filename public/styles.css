@@ -304,9 +304,9 @@ a { color: inherit; text-decoration: none; }
 .role-head h3 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
 .role-company {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 500;
   color: var(--accent-2);
-  margin-top: 2px;
 }
 
 .role-chips {
@@ -330,30 +330,45 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 22px;
 }
 
-.experience-list {
-  list-style: none;
+/* focus grid — 2×2 highlight items */
+
+.focus-grid {
   display: grid;
-  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
-.experience-list li {
-  padding: 13px 0 13px 26px;
-  border-top: 1px solid var(--border);
-  position: relative;
-  color: var(--muted);
+
+.focus-item {
+  display: flex;
+  gap: 14px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+.focus-item:hover { border-color: var(--border-strong); background: rgba(255, 255, 255, 0.04); }
+
+.focus-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--accent-2);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.focus-item strong {
+  display: block;
   font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
-.experience-list li:first-child { border-top: none; }
-.experience-list li::before {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 22px;
-  width: 8px;
-  height: 8px;
-  border-radius: 2px;
-  background: var(--grad);
+
+.focus-item span {
+  display: block;
+  font-size: 13.5px;
+  color: var(--muted);
 }
-.experience-list strong { color: var(--text); font-weight: 600; }
 
 /* impact cards */
 
@@ -542,7 +557,7 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 760px) {
   .hero { padding: 80px 20px 56px; }
-  .impact-grid, .stack-grid { grid-template-columns: 1fr; }
+  .impact-grid, .stack-grid, .focus-grid { grid-template-columns: 1fr; }
   .section { padding: 64px 0; }
   .nav-links a { padding: 6px 8px; font-size: 13px; }
   .role-card { padding: 24px; }
